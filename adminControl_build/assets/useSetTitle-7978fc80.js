@@ -1,0 +1,1 @@
+import{b as o,r}from"./router-b87f8164.js";import{c as a}from"./index-f2c432e6.js";function n(t,e){const{settitleText:s,settitleBarVisibility:i}=o.useContext(a);r.useEffect(()=>{s(t),i(e)},[])}export{n as u};

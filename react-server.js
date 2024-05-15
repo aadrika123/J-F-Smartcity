@@ -25,7 +25,7 @@ app.use(express.static("dashboard_property_build"));
 app.use(express.static("swm_build"));
 app.use(express.static("marriage_build"));
 app.use(express.static("admin_control_build"));
-app.use(express.static("rmcfine_penalty_build"));
+app.use(express.static("fines_rmc_build"));
 app.use(express.static("pet_build"));
 app.use(express.static("lv_dashboard_build"));
 app.use(express.static("agency_build"));
@@ -43,11 +43,11 @@ app.get("/citizen", (req, res) => {
 app.get("/citizen/*", (req, res) => {
   res.sendFile(path.join(__dirname, "citizen_build", "index.html"));
 });
-app.get("/rmcfines", (req, res) => {
-  res.sendFile(path.join(__dirname, "rmcfine_penalty_build", "index.html"));
+app.get("/fines-rmc", (req, res) => {
+  res.sendFile(path.join(__dirname, "fines_rmc_build", "index.html"));
 });
-app.get("/rmcfines/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "rmcfine_penalty_build", "index.html"));
+app.get("/fines-rmc/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "fines_rmc_build", "index.html"));
 });
 app.get("/fines", (req, res) => {
   res.sendFile(path.join(__dirname, "fine_penalty_build", "index.html"));
