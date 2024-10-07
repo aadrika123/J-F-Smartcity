@@ -36,7 +36,7 @@ app.use(express.static("fine_penalty_build"));
 app.use(express.static("fines_app_build"));
 app.use(express.static("rig_build"));
 app.use(express.static("ptms_build"));
-app.use(express.static("septicTank"));
+app.use(express.static("septicTank_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
