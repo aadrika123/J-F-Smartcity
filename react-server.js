@@ -38,6 +38,8 @@ app.use(express.static("rig_build"));
 app.use(express.static("ptms_build"));
 app.use(express.static("septicTank_build"));
 app.use(express.static("financeCommission_build"));
+app.use(express.static("masterControl_build"));
+app.use(express.static("mobile-lams_build"));
 
 //actual routes
 app.get("/citizen", (req, res) => {
@@ -185,6 +187,18 @@ app.get("/f-commission", (req, res) => {
 });
 app.get("/f-commission/*", (req, res) => {
   res.sendFile(path.join(__dirname, "financeCommission_build", "index.html"));
+});
+app.get("/master-control", (req, res) => {
+  res.sendFile(path.join(__dirname, "masterControl_build", "index.html"));
+});
+app.get("/master-control/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "masterControl_build", "index.html"));
+});
+app.get("/mobile-lams", (req, res) => {
+  res.sendFile(path.join(__dirname, "mobile-lams_build", "index.html"));
+});
+app.get("/mobile-lams/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "mobile-lams_build", "index.html"));
 });
 
 
